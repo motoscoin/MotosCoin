@@ -79,9 +79,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 {
     resize(850, 550);
     setWindowTitle(tr("Motos Coin") + " - " + tr("Wallet"));
-    
- //qApp->setStyleSheet("QMainWindow { background-color: rgb(192,192,192); background-image: url(:/images/bkg);} QToolBar > QToolButton {color:#ffffff;} QToolBar > QToolButton:checked {color:#000000;}");
-    
+     
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));

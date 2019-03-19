@@ -2675,8 +2675,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Listen for connections on &lt;port&gt; (default: 13455 or testnet: 16555)</source>
-        <translation>Ascultă pentru conectări pe &lt;port&gt; (implicit:  13455 sau testnet: 16555) </translation>
+        <source>Listen for connections on &lt;port&gt; (default: 13355 or testnet: 15555)</source>
+        <translation>Ascultă pentru conectări pe &lt;port&gt; (implicit:  13355 sau testnet: 15555) </translation>
     </message>
     <message>
         <location line="+1"/>

@@ -2676,8 +2676,8 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     </message>
     <message>
         <location line="+6"/>
-        <source>Listen for connections on &lt;port&gt; (default: 13455 or testnet: 16555)</source>
-        <translation>Écouter les connexions sur le &lt;port&gt; (default: 13455 or testnet: 16555)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 13355 or testnet: 15555)</source>
+        <translation>Écouter les connexions sur le &lt;port&gt; (default: 13355 or testnet: 15555)</translation>
     </message>
     <message>
         <location line="+1"/>

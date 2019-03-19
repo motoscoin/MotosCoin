@@ -2675,8 +2675,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Listen for connections on &lt;port&gt; (default: 13455 or testnet: 16555)</source>
-        <translation>Lyt efter forbindelser på &lt;port&gt; (default: 13455 eller Testnet: 16555)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 13355 or testnet: 15555)</source>
+        <translation>Lyt efter forbindelser på &lt;port&gt; (default: 13355 eller Testnet: 15555)</translation>
     </message>
     <message>
         <location line="+1"/>

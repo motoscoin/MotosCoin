@@ -1003,7 +1003,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     int64_t nSubsidy = 0.5 * COIN;
     if (nBestHeight > 0 && nBestHeight < 10)
     {
-		nSubsidy = 2000000000 * COIN;
+	nSubsidy = 2000000000 * COIN;
     }
 	else if (nBestHeight < 1000) {
 		nSubsidy = 200 * COIN;
@@ -2518,9 +2518,9 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "MotosCoin is born on 23-03-2019.";
+        const char* pszTimestamp = "MotosCoin is born on 20-03-2019.";
         CTransaction txNew;
-        txNew.nTime = 1552776288;
+        txNew.nTime = 1552955187;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2530,9 +2530,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1552776288;
+        block.nTime    = 1552955187;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 1149842 : 1149842;
+        block.nNonce   = !fTestNet ? 1370664 : 1370664;
         
         if (true  && (block.GetHash() != hashGenesisBlock)) {
 
@@ -2558,7 +2558,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
                 
-        assert(block.hashMerkleRoot == uint256("0x8182f4823c320996ae38f4afc5d1e8f28b630ac9aff488684f430c79d659911d"));
+        assert(block.hashMerkleRoot == uint256("0x50871b546304cbf04610ae05cf3dac8eb655b279378e27b4b4e77581f3efcd39"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
 
@@ -2825,7 +2825,7 @@ bool static AlreadyHave(CTxDB& txdb, const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0x9a, 0xd2, 0x18, 0xe9 };
+unsigned char pchMessageStart[4] = { 0x1d, 0xd1, 0x18, 0xe9 };
 
 bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 {
